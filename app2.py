@@ -6,9 +6,15 @@ import joblib
 with open ('model2.pkl','rb') as f:
     model = pickle.load(f)
 #------chargement des instances "LabelEncoder"-----------
-label_encoder = joblib.load("encoder.pkl")
-label_encoder2 = joblib.load("encoder2.pkl")
-label_encoder3 = joblib.load("encoder3.pkl")
+with open ('encoder.pkl','rb') as f:
+    label_encoder = pickle.load(f)
+
+with open ('encoder2.pkl','rb') as f:
+    label_encoder2 = pickle.load(f)
+
+with open ('encoder3.pkl','rb') as f:
+    label_encoder3 = pickle.load(f)
+
 
 st.title("Bank Account")
 # -- variable " type_location" ------
