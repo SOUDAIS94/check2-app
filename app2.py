@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle 
-import joblib
 
 #--------chargement du modèle --------------
 with open ('model2.pkl','rb') as f:
